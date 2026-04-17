@@ -18,7 +18,10 @@ app.use('/api/transcribe', transcribeRoutes);
 app.use('/api/suggestions', suggestionsRoutes);
 app.use('/api/chat', chatRoutes);
 
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
+app.get("/", (req, res) => {
+  res.send("Backend running ✅");
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
