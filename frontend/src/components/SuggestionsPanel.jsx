@@ -27,7 +27,7 @@ const SuggestionsPanel = ({
     console.log("📡 Calling suggestions API with:", latestTranscript.current);
 
     try {
-      const res = await fetch('http://localhost:5001/api/suggestions', {
+      const res = await fetch('https://twinmind-backend-dncc.onrender.com/api/suggestions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ transcript: latestTranscript.current }),

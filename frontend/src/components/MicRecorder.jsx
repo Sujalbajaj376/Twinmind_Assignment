@@ -39,7 +39,7 @@ const MicRecorder = ({ onTranscript }) => {
       formData.append('file', audioBlob, 'audio.webm');
 
       try {
-        const res = await fetch('http://localhost:5001/api/transcribe', {
+        const res = await fetch('https://twinmind-backend-dncc.onrender.com/api/transcribe', {
           method: 'POST',
           body: formData,
         });

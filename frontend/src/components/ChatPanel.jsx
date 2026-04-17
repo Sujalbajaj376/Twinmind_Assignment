@@ -26,7 +26,7 @@ const ChatPanel = ({
 
     setLoading(true);
 
-    fetch('http://localhost:5001/api/chat', {
+    fetch('https://twinmind-backend-dncc.onrender.com/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question, transcript }),
