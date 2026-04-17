@@ -7,6 +7,13 @@ Built with a focus on **real-time interaction**, **context awareness**, and **cl
 
 ---
 
+## 🌐 Live Demo
+
+- 🔗 Frontend: https://twinmind-assignment-two.vercel.app/
+- 🔗 Backend: https://twinmind-backend-dncc.onrender.com
+
+---
+
 ## ✨ Key Features
 
 ### 🎤 Continuous Voice Recording
@@ -30,7 +37,7 @@ Built with a focus on **real-time interaction**, **context awareness**, and **cl
 ### ⚡ Smart Auto-Updates
 - Suggestions update only when:
   - Meaningful new content is detected
-  - Cooldown prevents excessive API calls
+  - Avoids excessive API calls
 - Mimics real-world AI assistant behavior
 
 ### 💬 Interactive Chat Panel
@@ -45,11 +52,11 @@ Built with a focus on **real-time interaction**, **context awareness**, and **cl
   - Chat history
 
 ### 🎨 Clean UI
-- 3-column layout:
+- 3-column responsive layout:
   - Transcript
   - Suggestions
   - Chat
-- Built with Tailwind CSS
+- Built using Tailwind CSS
 
 ---
 
@@ -75,10 +82,10 @@ Built with a focus on **real-time interaction**, **context awareness**, and **cl
 2. Audio is captured in chunks (~10 seconds)
 3. Each chunk is sent to backend
 4. Whisper transcribes audio → text
-5. Transcript is appended
-6. Suggestions API generates AI insights
-7. UI updates intelligently (no spam)
-8. User can interact via chat
+5. Transcript is appended continuously
+6. AI generates suggestions based on context
+7. UI updates intelligently
+8. User interacts via chat or suggestions
 
 ---
 
